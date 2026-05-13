@@ -13,25 +13,27 @@ boton.addEventListener("click", () => {
 
   let registro = registrada.value 
   let dist = distancia.value
+  let localidad = localidad.value
   let precio;
 
-
+  
   if (registro==="si") {
-   if (dist<=3) {
-    precio= ("715.24")
+    
+   if (dist<=3) { 
+    precio= ("753.74")
    }
   else if (dist <= 6) {
-    precio= ("794.74")
+    precio= ("837.52")
   }
-  else if (dist <=12) {
-    precio = ("855.97")
+  else if (dist <=12){
+    precio = ("902.04")
   }
-  else if (dist<=27) {
-    precio=("917.24")
+  else if (dist<=27){
+    precio=("966.61")
   }
    }
 else  {
-   if(dist<=3) {
+   if(dist<=3){
     precio= ("1137.23")
    }
   else  
@@ -43,11 +45,27 @@ else  {
     precio = ("1360.99")
   }
   else 
-  if(dist<=27) {
+  if(dist<=27) 
+    {
     precio=("1458.41")
   }
   }
+  if (registro==="tarifa social") {
+    if (dist<=3) {
+      precio= ("339,18")
+     }
+    else if (dist <= 6) {
+      precio= ("376,88")
+    }
+    else if (dist <=12) {
+      precio = ("405,91")
+    }
+    else if (dist<=27) {
+      precio=("434,97")
+    }
+  }
   
+}
 
 
 
