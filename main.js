@@ -13,10 +13,10 @@ boton.addEventListener("click", () => {
 
   let registro = registrada.value 
   let dist = distancia.value
-  let localidad = localidad.value
+  let localidadbondi = localidad.value
   let precio;
 
-  
+if (localidadbondi==="caba") {
   if (registro==="si") {
     
    if (dist<=3) { 
@@ -65,15 +65,109 @@ else  {
     }
   }
   
-}
+} 
+if (localidadbondi==="provincia") {
+  if (registro==="si") {
+    
+   if (dist<=3) { 
+    precio= ("968,57")
+   }
+  else if (dist <= 6) {
+    precio= (" 1.089,64")
+  }
+  else if (dist <=12){
+    precio = ("1.210,71	")
+  }
+  else if (dist<=27){
+    precio=("1.452,85")
+  }
+   }
+else  {
+   if(dist<=3){
+    precio= (" 1.937,14")
+   }
+  else  
+  if(dist <= 6) {
+    precio= ("2.179,28")
+  }
+  else 
+   if(dist <=12) {
+    precio = ("2.421,42")
+  }
+  else 
+  if(dist<=27) 
+    {
+    precio=("2.905,70")
+  }
+  }
+  if (registro==="tarifa social") {
+    if (dist<=3) {
+      precio= (" 435,85")
+     }
+    else if (dist <= 6) {
+      precio= ("490,33")
+    }
+    else if (dist <=12) {
+      precio = ("544,81")
+    }
+    else if (dist<=27) {
+      precio=("653,78")
+    }
+  }
+  
+} 
+if (localidadbondi==="nacional") {
+  if (registro==="si") {
+    
+   if (dist<=3) { 
+    precio= (" 700,00")
+   }
+  else if (dist <= 6) {
+    precio= ("779,78 ")
+  }
+  else if (dist <=12){
+    precio = (" 839,86	")
+  }
+  else if (dist<=27){
+    precio=("899,99")
+  }
+   }
+else  {
+   if(dist<=3){
+    precio= ("1.113,00 ")
+   }
+  else  
+  if(dist <= 6) {
+    precio= (" 1.239,85")
+  }
+  else 
+   if(dist <=12) {
+    precio = ("1.335,38")
+  }
+  else 
+  if(dist<=27) 
+    {
+    precio=("1.430,98")
+  }
+  }
+  if (registro==="tarifa social") {
+    if (dist<=3) {
+      precio= ("315,00")
+     }
+    else if (dist <= 6) {
+      precio= ("350,90")
+    }
+    else if (dist <=12) {
+      precio = (" 377,93")
+    }
+    else if (dist<=27) {
+      precio=("404,99	")
+    }
+  }
+  
+} 
+ tarifa.innerText = precio;
 
-
-
-  tarifa.innerText = precio;
-
-
-}
-
-);
+});
 
  
